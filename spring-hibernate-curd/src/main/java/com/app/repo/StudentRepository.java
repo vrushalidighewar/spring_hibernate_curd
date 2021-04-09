@@ -1,0 +1,16 @@
+package com.app.repo;
+
+import java.util.List;
+
+import com.app.entity.Student;
+
+public interface StudentRepository {
+
+	public Boolean saveOrUpdate(Student student);
+	
+	public Boolean deleteStudent(Integer id);
+	
+	public Student getStudentById(Integer id);
+	
+	public List<Student> getStudents();
+}
